@@ -90,7 +90,7 @@ a{
 /* section start  */
 .hero-section{
     height: 80vh;
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -126,7 +126,7 @@ a{
 
 /* About section start here  */
 .about{
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .content-left-right{
     display: flex;
@@ -137,6 +137,7 @@ a{
 .title-section{
     font-size: 2.8rem;
     font-weight: 800;
+    text-align: center;
 }
 
 .left-text{
@@ -149,7 +150,8 @@ a{
 /* images properties  */
 
 .img-landscape{
-    padding: 20px;
+    padding-left: 30px ;
+    padding-right: 20px;
     height: 200px;
     width: 400px;
     
@@ -194,16 +196,20 @@ p{
 
 
 
-/* responsive design  */    
-@media screen and (max-width: 1050px) {
+/* responsive design  */ 
+@media screen and (max-width: 1350px) {
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+    .hero-section{
+        margin-top: 0;
+    }
     .section-content{
         margin-left: 100px;
         margin-right: 100px;
     }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-    }
+    
     .logo{
         text-align: center;
         align-items: center;
@@ -215,9 +221,7 @@ p{
     .nav-menu a{
         font-size: 0.8rem;
     }
-    .social-icons{
-        visibility: hidden;
-    }
+    
 
     .hero-section{
         height: 100%;
@@ -243,6 +247,13 @@ p{
 
 
 @media screen and (max-width:950px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .social-icons{
+        visibility: hidden;
+    }
     .section-content{
         margin-left: 50px;
         margin-right: 50px;

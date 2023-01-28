@@ -1,14 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,800&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Martian+Mono:wght@100;300;400;700&family=Orbitron:wght@400;700&family=Rubik+Vinyl&family=Space+Mono&family=Special+Elite&family=Tangerine&display=swap');
+
+fonts{
+    font-family: 'Bangers', cursive;
+    font-family: 'Martian Mono', monospace;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rubik Vinyl', cursive;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Tangerine', cursive;
+}
+
+/* global designs  */
 body{
+    background: rgb(32, 32, 32);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
+    color: #fff;
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+    
+    align-items: center;
+}
+
+.section{
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 5px
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* custom designs */
 .navbar{
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.logo{
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 15px;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 500ms;
+}
+.nav-menu a{
+    padding: 15px;
+}
+.nav-menu a:hover{
+    transform: scale(1.2);
+    transition: ease-in-out 500ms;
+    color: rgb(202, 18, 144);
+}
+
+.social-icons a{
+    padding: 15px;
+}
+
+.social-icons a:hover{
+    transform: scale(1.7);
+    transition: ease-in-out 500ms;
+    color: rgb(202, 18, 144);
 }

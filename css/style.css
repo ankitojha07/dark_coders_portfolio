@@ -169,32 +169,73 @@ p{
     text-align: center;
 }
 
-/* button  */
-.btn-know{
-    text-align: center;
-    margin-top: 20px;
-    width: 100px;
-    border: 1px solid;
-    padding: 10px;
-    background-color:rgb(32, 32, 32);
-    color: #fff;
-}
-.btn-know:hover{
-    background-color: rgb(202, 18, 144);
-    transform: scale(1.1);
-    transition: ease-in-out 200ms;
-    border: none;
-    
-    
-}
-
 /* animations  */
 .images:hover{
     transform: scale(1.1);
     transition: ease-in-out 400ms;
 }
 
+/* button designs  */
+.btn-item{
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid white;
+    width: 100px;
+    background-color: rgb(32, 32, 32);
+}
+.btn-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(202, 18, 144);
+    color: #fff;
+    border: 1px solid rgb(202, 18, 144) ;
+}
 
+/* project section  */
+.project{
+    margin-top: 50px;
+}
+.all-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+    align-items: center;
+}
+.project-card{
+    margin-top: 20px;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.project-card:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 300ms ;
+}
+.description{
+    max-width: 400px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-div{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.tech-stack-title{
+    font-size: 1.05rem;
+    font-weight: 800;
+}
+.tech{
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 1px solid white;
+}
 
 /* responsive design  */ 
 @media screen and (max-width: 1350px) {

@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Martian+Mono:wght@100;300;400;700&family=Orbitron:wght@400;700&family=Rubik+Vinyl&family=Space+Mono&family=Special+Elite&family=Tangerine&display=swap');
 
-fonts{
+/* fonts{
     font-family: 'Bangers', cursive;
     font-family: 'Martian Mono', monospace;
     font-family: 'Orbitron', sans-serif;
@@ -10,89 +10,77 @@ fonts{
     font-family: 'Space Mono', monospace;
     font-family: 'Special Elite', cursive;
     font-family: 'Tangerine', cursive;
-}
+} */
 
 /* global designs  */
+
+htnl{
+    overflow-x: hidden;
+}
 body{
+    overflow-x: hidden;
+}
+*{
     background: rgb(32, 32, 32);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
     color: #fff;
+    
 }
 
 a{
     color: #fff;
     text-decoration: none;
-    
     align-items: center;
 }
 
-.section-content{
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.justify-center{
+.header{
+    padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
-
 .logo{
     width: 100%;
     font-size: 3rem;
     font-weight: 800;
-    color: #fff;
-    
+    color: #fff; 
 }
 .logo:hover{
     transform: scale(1.1);
     transition: ease-in-out 200ms;
 }
 
-/* custom designs */
+/* Navbar designs */
 nav{
-    margin-top: 20px;
-    width: 100%;
+   width: 100%;
     font-family: 'Orbitron', sans-serif;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
-
-.nav-menu{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.nav-menu a{
+nav a{
     font-size: 1.2rem;
 }
-.nav-menu a:hover{
+nav a:hover{
     transform: scale(1.2);
     transition: ease-in-out 500ms;
     color: rgb(202, 18, 144);
 }
 
-
-
+/* social icons design  */
 .social-icons{
-    width: 100%;
+    width: 20%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .social-icons a{
     font-size: 1.6rem;
     margin: 10px;
     padding: 5px;
-}
-.hero-social{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 .social-icons a:hover{
     transform: scale(1.7);
@@ -100,11 +88,30 @@ nav{
     color: rgb(202, 18, 144);
 }
 
+.mobile-nav-icon{
+    
+    height: 2rem;
+    width: 3rem;
+}
+.mobile-navbar-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name='close']{
+    display: none;
+}
+
 
 /* section start  */
+
 .hero-section{
-    height: 80vh;
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -120,7 +127,9 @@ nav{
     margin-top: 20px;
     font-size: 1.2rem;
     text-align: center;
-    padding: 20px;
+    width: 70%;
+    line-height: 1.6;
+    letter-spacing: 2px;
 }
 .btn-connect{
     align-items: center;
@@ -142,16 +151,15 @@ nav{
 .about{
     margin-top: 50px;
 }
-.content-left-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .title-section{
     font-size: 2.8rem;
     font-weight: 800;
     text-align: center;
+}
+.content-left-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
 
 .left-text{
@@ -159,15 +167,17 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40%;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-top: 20px;
 }
 
-/* images properties  */
-
 .img-landscape{
-    padding-left: 30px ;
-    padding-right: 20px;
-    height: 200px;
+    margin-left: 10px;
+    height: 300px;
     width: 400px;
+    margin-top: 20px;
     
 }
 .img-portrait{
@@ -196,6 +206,7 @@ p{
     margin-right: 10px;
     border: 1px solid white;
     width: 100px;
+    margin-top: 20px;
     background-color: rgb(32, 32, 32);
 }
 .btn-item:hover{
@@ -207,8 +218,9 @@ p{
 }
 
 /* project section  */
-.project{
-    margin-top: 50px;
+
+.title-section{
+    margin-top: 30px;
 }
 .all-projects{
     display: flex;
@@ -251,20 +263,12 @@ p{
     border-left: 1px solid white;
 }
 
-/* responsive design  */ 
+/*
+===========================================
+responsive design
+===========================================
+*/ 
 @media screen and (max-width: 1350px) {
-    .navbar{
-        display: flex;
-        flex-direction: row;
-    }
-    .hero-section{
-        margin-top: 0;
-    }
-    .section-content{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    
     .logo{
         text-align: center;
         align-items: center;
@@ -272,14 +276,6 @@ p{
     .logo a{
         text-align: center;
         font-size: 1.8rem;
-    }
-    .nav-menu a{
-        font-size: 0.8rem;
-    }
-    
-
-    .hero-section{
-        height: 100%;
     }
 
     .bio{
@@ -293,48 +289,79 @@ p{
     .title-section{
         text-align: center;
     }
-
     .img-landscape{
         height: 200px;
-    width: 400px;
+        width: 400px;
     }
 }
 
 
-@media screen and (max-width:950px) {
-    .navbar{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:940px) {
+    
+    .header{
+        position: relative;
     }
-    .social-icons{
-        visibility: hidden;
+    .logo{
+        font-size: 3rem;
     }
-    .section-content{
-        margin-left: 50px;
-        margin-right: 50px;
+    .mobile-navbar-btn{
+        display: block;
+        z-index: 999;
+        border: 1px solid #fff;
     }
+.bio{
+    font-size: 0.9rem;
+}
     .content-left-right{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .left-text{
-        padding: 0;
-        direction: unset;
+        width: 70%;
+        font-size: 0.9rem;
     }
-    .img-landscape{
-        margin-top: 20px;
-        height: 150px;
-    width: 350px;
+    nav{
+        /* display: none; */
+        
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
     }
-    .btn-connect{
-        width: 300px;
+    nav a{
+        color: black;
+        background: #fff;
+        margin-top: 10px;
     }
 
-    .hero-social{
+    .active nav{
+        transform: translateX(0);
+        opacity: 1;
         visibility: visible;
     }
-    
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name='close']{
+        display: block;
+        background:#fff;
+        color: #000;
+        border: 3px solid #000;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name='menu']{
+        display: none;
+    }
 }

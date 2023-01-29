@@ -29,12 +29,6 @@ a{
     align-items: center;
 }
 
-.section{
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 5px
-}
-
 .section-content{
     margin-left: 200px;
     margin-right: 200px;
@@ -42,32 +36,39 @@ a{
 
 .justify-center{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-/* custom designs */
-.navbar{
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .logo{
-    
+    width: 100%;
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
-    padding: 15px;
+    
 }
 .logo:hover{
     transform: scale(1.1);
-    transition: ease-in-out 500ms;
+    transition: ease-in-out 200ms;
+}
+
+/* custom designs */
+nav{
+    margin-top: 20px;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .nav-menu a{
     font-size: 1.2rem;
-    padding: 15px;
 }
 .nav-menu a:hover{
     transform: scale(1.2);
@@ -75,11 +76,24 @@ a{
     color: rgb(202, 18, 144);
 }
 
+
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .social-icons a{
     font-size: 1.6rem;
-    padding: 15px;
+    margin: 10px;
+    padding: 5px;
 }
-
+.hero-social{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .social-icons a:hover{
     transform: scale(1.7);
     transition: ease-in-out 500ms;
@@ -112,7 +126,7 @@ a{
     align-items: center;
     font-size: 1.3rem;
     font-weight: 800;
-    width: 400px;
+    width: 800px;
     height: 45px;
     padding: 10px;
     margin-top: 20px;
@@ -314,6 +328,13 @@ p{
         margin-top: 20px;
         height: 150px;
     width: 350px;
+    }
+    .btn-connect{
+        width: 300px;
+    }
+
+    .hero-social{
+        visibility: visible;
     }
     
 }

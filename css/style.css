@@ -120,12 +120,12 @@ nav a:hover{
 }
 .image{
     height: 400px;
-    width: 300px;
+    width: 600px;
     border-radius: 10%;
 }
 
 .bio{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.2rem;
     text-align: center;
     width: 70%;
@@ -139,7 +139,7 @@ nav a:hover{
     width: 800px;
     height: 45px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px solid #fff;
 }
 .btn-connect:hover{
@@ -213,6 +213,7 @@ p{
     width: 200px;
     margin-top: 20px;
     background-color: rgb(32, 32, 32);
+    cursor: pointer;
 }
 .btn-item{
     color: #fff;
@@ -311,6 +312,10 @@ responsive design
 
 
 @media screen and (max-width:940px) {
+
+    .btn-connect{
+        width: 400px;
+    }
     
     .header{
         position: relative;

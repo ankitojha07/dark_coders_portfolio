@@ -19,7 +19,7 @@ html{
 }
 body{
     overflow-x: hidden;
-    width: 60rem;
+    width: 65rem;
     margin-inline: auto;
 }
 *{
@@ -116,26 +116,40 @@ nav a:hover{
 /* section start  */
 
 .hero-section{
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-div{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
+
+
 .image{
     height: 400px;
-    width: 600px;
+    width: 400px;
     border-radius: 10%;
 }
 
 .bio{
-    margin-top: 10px;
     font-size: 1.2rem;
-    text-align: center;
-    width: 70%;
+    text-align: end;
     line-height: 1.6;
-    letter-spacing: 2px;
+    letter-spacing: 1.6px;
 }
+
+.connect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
 .btn-connect{
     align-items: center;
     font-size: 1.3rem;
@@ -155,49 +169,7 @@ nav a:hover{
 }
 
 /* About section start here  */
-.about{
-    margin-top: 50px;
-}
-.title-section{
-    font-size: 2.8rem;
-    font-weight: 800;
-    text-align: center;
-}
-.content-left-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-}
 
-.left-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin-top: 20px;
-}
-
-.img-landscape{
-    margin-left: 10px;
-    height: 300px;
-    width: 400px;
-    margin-top: 20px;
-    
-}
-.img-portrait{
-    height: 300px;
-    width: 200px;
-    
-}
-
-.special-text{
-    color: rgb(23, 224, 234);
-}
-p{
-    text-align: center;
-}
 
 /* animations  */
 .images:hover{
@@ -236,49 +208,6 @@ p{
 
 /* project section  */
 
-.title-section{
-    margin-top: 30px;
-}
-.all-projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around   ;
-    align-items: center;
-}
-.project-card{
-    margin-top: 20px;
-    max-width: 500px;
-    padding: 20px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 10px;
-}
-.project-card:hover{
-    transform: scale(1.1);
-    transition: ease-in-out 300ms ;
-}
-.description{
-    max-width: 400px;
-}
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.inner-div{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.tech-stack-title{
-    font-size: 1.05rem;
-    font-weight: 800;
-}
-.tech{
-    margin-top: 5px;
-    padding-left: 10px;
-    border-left: 1px solid white;
-}
 
 /*
 ===========================================
@@ -305,10 +234,6 @@ responsive design
     }
     .title-section{
         text-align: center;
-    }
-    .img-landscape{
-        height: 200px;
-        width: 400px;
     }
 }
 
@@ -340,7 +265,7 @@ responsive design
         align-items: center;
     }
     .left-text{
-        width: 70%;
+        width: 100%;
         font-size: 0.9rem;
     }
     nav{

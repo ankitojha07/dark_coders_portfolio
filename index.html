@@ -15,6 +15,11 @@
     href="https://fonts.googleapis.com/css2family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- pages html  -->
+  <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/project.css">
+  <link rel="stylesheet" href="./css/skills.css">
 </head>
 
 <!-- body starts here  -->
@@ -38,23 +43,27 @@
 
   <!-- section 1 start here  -->
   <div class="section hero-section">
-    <div class="hero-img">
-      <img class="image" src="./public/its-me.jpeg" alt="" />
+      <div class="hero-div">
+        <img class="image" src="./public/its-me.jpeg" alt="" />
+        <div class="bio">
+        <span style="font-size:2rem; color: rgb(13, 157, 230);">I write code!.</span> <br> I use <span
+          style="text-transform: uppercase; font-weight: bold; color: red;">JavaScript - Typescript - React - Next
+        </span>when I'm
+        coding web Frontends. <br> I use <span style="font-weight: bold; color: yellow; text-transform: uppercase;">Kotlin
+        </span> / <span style="color: rgb(13, 157, 230);">React-Native</span> when I'm coding mobile app.
+      </div>
     </div>
-    <div class="bio">
-      <span style="font-size:2rem; color: rgb(13, 157, 230);">I write code!.</span> <br> I use <span
-        style="text-transform: uppercase; font-weight: bold; color: red;">JavaScript - Typescript - React -- Next
-      </span>when I'm
-      coding web Frontends. <br> I use <span style="font-weight: bold; color: yellow; text-transform: uppercase;">Kotlin
-      </span> / <span style="color: rgb(13, 157, 230);">React-Native</span> when I'm coding mobile app.
+
+
+    <div class="connect">
+      <div class="hero-social social-icons">
+        <a href="https://github.com/ankitojha07" target="_blank" class="fa fa-github"></a>
+        <a href="https://twitter.com/ankitojha_07" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/ankitojha07/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com/@codeforcoffeee" target="_blank" class="fa fa-youtube"></a>
+      </div>
+      <a href="https://www.linkedin.com/in/ankitojha07/" target="_blank" class="btn-connect">Let's Connect</a>
     </div>
-    <div class="hero-social social-icons">
-      <a href="https://github.com/ankitojha07" target="_blank" class="fa fa-github"></a>
-      <a href="https://twitter.com/ankitojha_07" target="_blank" class="fa fa-twitter"></a>
-      <a href="https://www.linkedin.com/in/ankitojha07/" target="_blank" class="fa fa-linkedin"></a>
-      <a href="https://www.youtube.com/@codeforcoffeee" target="_blank" class="fa fa-youtube"></a>
-    </div>
-    <a href="https://www.linkedin.com/in/ankitojha07/" target="_blank" class="btn-connect">Let's Connect</a>
   </div>
 
   <!-- About section start here  -->
@@ -89,24 +98,18 @@
   </div>
 
   <!-- Projects section start here  -->
-  <div class="section-content projects">
+  <section class="section-content projects">
     <h1 class="title-section" id="projects">Projects</h1>
-
     <!-- all projects here  -->
     <div class="all-projects">
       <!-- project card  -->
       <div class="project-card">
         <h1 style="color: green; font-size: 1.6rem;">GeeksforGeeks-LPU</h1>
-        <div class="description" style="
-              font-size: 0.8rem;
-              line-height: 1.5;
-              letter-spacing: 1.4px;
-              margin-top: 2px;
-            ">
+        <p class="description">
           Official website for college community. <br />
           My task in this project was to create UI for the website and making
           Home page using HTML CSS and JS.
-        </div>
+        </p>
         <div class="inner-div">
           <div class="buttons">
             <a class="btn-item" href="https://geeksforgeekslpu.netlify.app/" target="_blank">View</a>
@@ -125,15 +128,10 @@
       <!-- project card  -->
       <div class="project-card">
         <h1 style="color: rgb(235, 228, 30); font-size: 1.6rem;">Portfolio Website</h1>
-        <div class="description" style="
-              font-size: 0.8rem;
-              line-height: 1.5;
-              letter-spacing: 1.4px;
-              margin-top: 2px;
-            ">
+        <p class="description">
           This is my Portfolio website, that I have created for fun.<br />
           I have used React Js here (Just for learning purpose).
-        </div>
+        </p>
         <div class="inner-div">
           <div class="buttons">
             <a class="btn-item" href="https://ankitojha.netlify.app/" target="_blank">View</a>
@@ -152,15 +150,10 @@
       <!-- project card  -->
       <div class="project-card">
         <h1 style="color: rgb(12, 173, 209); font-size: 1.6rem;">codeforcoffeee</h1>
-        <div class="description" style="
-              font-size: 0.8rem;
-              line-height: 1.5;
-              letter-spacing: 1.4px;
-              margin-top: 2px;
-            ">
+        <p class="description" >
           This is a simple website for a web dev agency (demo project). <br />
           HTML and CSS is the main tech that I have used here.
-        </div>
+        </p>
         <div class="inner-div">
           <div class="buttons">
             <a class="btn-item" href="https://codeforcoffee.netlify.app/" target="_blank">View</a>
@@ -169,19 +162,16 @@
           <div class="tech-stack">
             <div class="tech-stack-title">Tech Stack</div>
             <div class="tech" style="color: rgb(236, 71, 16);">HTML & CSS</div>
-
             <div class="tech" style="color: rgb(244, 224, 9);">JavaScript</div>
             <div class="tech" style="color: rgb(239, 31, 180);">Figma</div>
           </div>
         </div>
-      </div>
-
-      <!-- all projects div end  -->
-    </div>
+    </div> <!-- all projects div end  -->
+  </section>
 
     <!-- skills section start here  -->
     <!-- About section start here  -->
-    <div class="section-content about">
+    <div class="section-content skills">
       <h1 class="title-section">Skills</h1>
 
       <div>
@@ -199,5 +189,4 @@
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
-
 </html>

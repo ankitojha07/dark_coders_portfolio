@@ -7,3 +7,10 @@ const toogleNavBar = () => {
 };
 
 mobile_nav.addEventListener("click", () => toogleNavBar());
+
+
+const btnKnow = document.querySelector(".btn-know");
+
+btnKnow.addEventListener("click", ()=>{
+  window.location.href="./pages/about.html";
+})

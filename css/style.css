@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Martian+Mono:wght@100;300;400;700&family=Orbitron:wght@400;700&family=Rubik+Vinyl&family=Space+Mono&family=Special+Elite&family=Tangerine&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 /* fonts{
     font-family: 'Bangers', cursive;
     font-family: 'Martian Mono', monospace;
@@ -13,7 +14,6 @@
 } */
 
 /* global designs  */
-
 htnl{
     overflow-x: hidden;
 }
@@ -25,7 +25,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Marcellus', serif;
     color: #fff;
     
 }

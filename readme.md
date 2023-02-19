@@ -2,3 +2,5 @@
 - created in HTML CSS & JS only
 
 ### [Live Preview](https://darkcoders07.netlify.app/)
+
+![SS](/public/dark-coders.png)
